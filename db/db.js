@@ -12,7 +12,7 @@ if (process.env.DATABASE_URL) {
 }
 
 // 8 Use the sequelize import from #3 to connect to the blog database
-const db = new Sequelize("postgres://saquotareaves@localhost:5432/blog", {
+const db = new Sequelize(databaseUrl, {
     logging: false,
 });
 
